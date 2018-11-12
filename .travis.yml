@@ -4,3 +4,9 @@ jdk:
   - oraclejdk8
   - openjdk7
   
+jobs:
+  include:
+    - stage: unit test
+      script: ant test
+    - stage: echo
+      script: echo stage2
