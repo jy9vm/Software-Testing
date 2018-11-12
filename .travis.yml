@@ -6,7 +6,9 @@ jdk:
   
 jobs:
   include:
+    - stage: begin
+      script: echo begin
     - stage: unit test
       script: ant test
-    - stage: echo
-      script: echo stage2
+    - stage: finish
+      script: echo finish
